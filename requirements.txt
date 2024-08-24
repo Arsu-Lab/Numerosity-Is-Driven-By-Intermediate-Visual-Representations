@@ -1,0 +1,16 @@
+matplotlib
+seaborn
+numpy
+hdbscan
+torch
+torchvision
+tqdm
+scipy
+shapely
+pillow
+wandb
+python-dotenv
+scikit-learn
+torchfcn
+visualpriors
+git+https://github.com/dicarlolab/CORnet.git

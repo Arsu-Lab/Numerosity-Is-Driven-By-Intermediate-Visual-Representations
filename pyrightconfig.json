@@ -1,0 +1,9 @@
+// See the following page for configuration options:
+// https://microsoft.github.io/pyright/#/configuration?id=main-configuration-options
+{
+  "venvPath": "/opt/homebrew/Caskroom/miniconda/base/envs/",
+  "venv": "Numbersense",
+  "typeCheckingMode": "off",
+  "python.analysis.extraPaths": ["."],
+  "pythonVersion": "3.10"
+}

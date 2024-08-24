@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Numbersense"
+version = "0.1"
+authors = [{ name = "Elias Wahl"}]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "matplotlib",
+    "seaborn",
+    "numpy",
+    "hdbscan",
+    "torch>=1.11.0",
+    "torchvision",
+    "tqdm",
+    "scipy",
+    "shapely",
+    "pillow",
+    "scikit-learn"
+]
+
+[project.optional-dependencies]
+backbone = [
+    "CORnet @ git+https://github.com/dicarlolab/CORnet.git", 
+    "torchfcn",
+    "visualpriors"
+]
+
+feature_extraction = [
+    "Net2Brain @ git+https://github.com/cvai-roig-lab/Net2Brain",
+    ]
+
+[project.urls]
+"Source Code" = "https://github.com/Eliulm/Numbersense"
+
+[tool.setuptools]
+packages=[
+    "Numbersense",
+    "Numbersense.analysis",
+    "Numbersense.model",
+    "Numbersense.data_loaders",
+    "Numbersense.datagen",
+    "Numbersense.figures",
+    "Numbersense.training",
+    "Numbersense.utilities",
+]
